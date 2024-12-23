@@ -25,6 +25,7 @@ header{
     z-index: 1000;
 
 }
+
 .logo{
     color: white;
     font-size:  1.3rem;
@@ -79,6 +80,7 @@ li a:hover::before{
     font-size: 2rem;
     display: none;
 }
+
 
 section{
     min-height: 100vh;
@@ -136,6 +138,12 @@ section{
     font-weight: 500;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
+}
+.contact-btn {
+    color: black;
+}
+.download-btn {
+    color: black;
 }
 .btn:hover{
     background-color: black;
