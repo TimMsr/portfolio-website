@@ -263,6 +263,224 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
+.education {
+    padding: 5rem 12%;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-top: 5rem;
+}
+
+.education .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    margin-bottom: 3rem;
+}
+
+.education-timeline {
+    position: relative;
+    margin: 2rem 0;
+    padding-left: 2rem;
+    border-left: 3px solid rgb(0, 123, 255);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -0.8rem;
+    top: 0.3rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(0, 123, 255);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-content {
+    margin-left: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline-date {
+    font-size: 1.1rem;
+    color: rgb(100, 100, 100);
+    font-weight: 400;
+}
+
+.timeline-content p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.timeline-content .location {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: rgb(120, 120, 120);
+    font-style: italic;
+}
+.certifications {
+    padding: 5rem 12%;
+
+    margin-top: 5rem;
+}
+
+.certifications .section-title {
+    text-align: center;
+    font-size: 2.5rem; 
+    font-weight: 600;
+    color: rgb(50, 50, 50);
+    margin-bottom: 3rem;
+}
+
+.certification-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.certification-card {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: white;
+    border-radius: 1.5rem;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 400px;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-icon {
+    font-size: 3rem;
+    color: rgb(0, 123, 255);
+    margin-right: 1.5rem;
+}
+
+.certification-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(30, 30, 30);
+    margin: 0;
+}
+
+.certification-info p {
+    font-size: 1.2rem;
+    color: rgb(100, 100, 100);
+    margin: 0.5rem 0 0;
+}
+
+.skill-tree {
+    padding: 4rem 2rem;
+    background: #ffffff;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-tree h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.tree-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.branch {
+    flex: 1 1 calc(45% - 1rem);
+    background: #292943;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.branch h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: rgb(107, 107, 243);
+}
+
+.branch ul {
+    list-style: none;
+    padding: 0;
+}
+
+.branch li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #3c3c5c;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.branch li:hover {
+    transform: scale(1.03);
+    background: #464680;
+}
+
+.language-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.proficiency, .level {
+    font-size: 1rem;
+    color: #c3c3f7;
+}
+
+.level-bar {
+    position: relative;
+    width: 100%;
+    height: 0.8rem;
+    background: #555;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin: 0.5rem 0;
+}
+
+.level-bar span {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, #00d1ff, #ff8c00);
+    transition: width 0.4s ease;
+}
+
+
+
 .input-box{
     display: flex;
     flex-direction: column;
@@ -372,6 +590,7 @@ footer ul li a{
     .experience-info img{
         width: 70vw;
     }
+   
 }
 
 @media(max-width:600px){
