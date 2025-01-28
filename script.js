@@ -7,18 +7,9 @@ menuIcon.onclick = () => {
 
 const sendButton = document.getElementById('send-btn');
 
-sendButton.addEventListener('click', function() {
-    const tempInput = document.createElement('textarea');
-    tempInput.value = 'tim.maeser2@gmail.com'; 
-    document.body.appendChild(tempInput); 
-
-
-    tempInput.select();
-    tempInput.setSelectionRange(0, 99999); 
-
-    document.execCommand('copy');
-
-    document.body.removeChild(tempInput);
-
-    alert('Email copied to clipboard!');
-});
+document.getElementById("copy-email").addEventListener("click", function () {
+    const email = document.getElementById("email").textContent;
+    navigator.clipboard.writeText(email).then(() => {
+      alert("Email copied to clipboard!");
+    });
+  });
